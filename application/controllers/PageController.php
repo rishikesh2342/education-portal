@@ -24,6 +24,34 @@ class PageController extends CI_Controller {
     public function logIn() {
         $this->viewloader->load('login/index.php');
     }
-
-
+    public function SignUp() {
+        $this->viewloader->load('signUp/index.php');
+    }
+    public function Classes() {
+        $this->viewloader->load_user('class/index.php');
+    }
+    public function students() {
+        $this->viewloader->load_user('student/index.php');
+    }
+    public function subject() {
+        $this->viewloader->load_user('subject/index.php');
+    }
+    public function classFee() {
+        $this->viewloader->load_user('fees/classFee.php');
+    }
+    public function transportFee() {
+        $this->viewloader->load_user('fees/transportFee.php');
+    }
+    public function staffAttendance() {
+        $this->viewloader->load_user('staff/staffattendance.php');
+    }
+    public function staffList() {
+        $this->viewloader->load_user('staff/stafflist.php');
+    }
+    public function studentReviewLog() {
+        $this->viewloader->load_user('reviewlog/staffReviewLog.php');
+    }
+    public function staffReviewLog() {
+        $this->viewloader->load_user('reviewlog/studentReviewLog.php');
+    }
 }
